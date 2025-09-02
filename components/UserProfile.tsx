@@ -17,12 +17,12 @@ export default function UserProfile() {
 	return (
 		<Popover>
 			<PopoverTrigger asChild>
-				<button className="h-10 w-10 rounded-full p-0 flex items-center justify-center hover:opacity-80 transition-opacity">
+				<Button variant="ghost" className="h-10 w-10 rounded-full p-0">
 					<Avatar className="h-8 w-8">
 						<AvatarImage src="https://avatar.vercel.sh/128" />
 						<AvatarFallback>JD</AvatarFallback>
 					</Avatar>
-				</button>
+				</Button>
 			</PopoverTrigger>
 			<PopoverContent className='w-64' align="end">
 				<PopoverHeader>
