@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StickerGen AI</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              border: "hsl(214.3, 31.8%, 91.4%)",
+              input: "hsl(214.3, 31.8%, 91.4%)",
+              ring: "hsl(214.3, 31.8%, 91.4%)",
+              background: "hsl(0, 0%, 100%)",
+              foreground: "hsl(222.2, 84%, 4.9%)",
+              primary: {
+                DEFAULT: "hsl(222.2, 47.4%, 11.2%)",
+                foreground: "hsl(210, 40%, 98%)",
+              },
+              secondary: {
+                DEFAULT: "hsl(210, 40%, 96.1%)",
+                foreground: "hsl(222.2, 47.4%, 11.2%)",
+              },
+              destructive: {
+                DEFAULT: "hsl(0, 84.2%, 60.2%)",
+                foreground: "hsl(210, 40%, 98%)",
+              },
+              muted: {
+                DEFAULT: "hsl(210, 40%, 96.1%)",
+                foreground: "hsl(215.4, 16.3%, 46.9%)",
+              },
+              accent: {
+                DEFAULT: "hsl(210, 40%, 96.1%)",
+                foreground: "hsl(222.2, 47.4%, 11.2%)",
+              },
+              popover: {
+                DEFAULT: "hsl(0, 0%, 100%)",
+                foreground: "hsl(222.2, 84%, 4.9%)",
+              },
+              card: {
+                DEFAULT: "hsl(0, 0%, 100%)",
+                foreground: "hsl(222.2, 84%, 4.9%)",
+              },
+            },
+            borderRadius: {
+              lg: "0.5rem",
+              md: "calc(0.5rem - 2px)",
+              sm: "calc(0.5rem - 4px)",
+            },
+            keyframes: {
+              "content-show": {
+                from: { opacity: "0", transform: "scale(0.95)" },
+                to: { opacity: "1", transform: "scale(1)" },
+              },
+              "content-hide": {
+                from: { opacity: "1", transform: "scale(1)" },
+                to: { opacity: "0", transform: "scale(0.95)" },
+              },
+            },
+            animation: {
+              in: "content-show 0.1s ease-out",
+              out: "content-hide 0.1s ease-out",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <style>
+      body {
+        font-family: 'Noto Sans', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "clsx": "https://cdn.jsdelivr.net/npm/clsx@2.1.1/dist/clsx.js",
+    "tailwind-merge": "https://cdn.jsdelivr.net/npm/tailwind-merge@2.3.0/dist/tailwind-merge.mjs",
+    "lucide-react": "https://cdn.jsdelivr.net/npm/lucide-react@0.395.0/dist/esm/lucide-react.js",
+    "@radix-ui/react-popover": "https://aistudiocdn.com/@radix-ui/react-popover@^1.1.15",
+    "@radix-ui/react-slot": "https://aistudiocdn.com/@radix-ui/react-slot@^1.2.3",
+    "@radix-ui/react-avatar": "https://aistudiocdn.com/@radix-ui/react-avatar@^1.1.10",
+    "class-variance-authority": "https://aistudiocdn.com/class-variance-authority@^0.7.1",
+    "@radix-ui/react-label": "https://aistudiocdn.com/@radix-ui/react-label@^2.1.7",
+    "@radix-ui/react-separator": "https://aistudiocdn.com/@radix-ui/react-separator@^1.1.7"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

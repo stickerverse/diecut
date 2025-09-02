@@ -1,0 +1,5 @@
+{
+  "name": "StickerGen AI",
+  "description": "An interactive web application to design and order custom die-cut stickers. Users can select shape, material, finish, size, and quantity, and upload their own designs for a personalized sticker creation experience.",
+  "requestFramePermissions": []
+}
