@@ -21,6 +21,9 @@ const ImagePreview: React.FC<{ imageUrl: string; shape: StickerShape; onClear: (
 
     // Initialize canvas
     useEffect(() => {
+        if (fabricCanvasRef.current) {
+            return; // Canvas is already initialized
+        }
         // The parent div is max-w-md (448px). With p-8 (32px), inner space is 448 - 64 = 384px.
         const canvasSize = 384;
         const canvas = new fabric.Canvas(canvasRef.current, {
@@ -71,6 +74,7 @@ const ImagePreview: React.FC<{ imageUrl: string; shape: StickerShape; onClear: (
 
         return () => {
             canvas.dispose();
+            fabricCanvasRef.current = null;
         };
     }, []);
 
